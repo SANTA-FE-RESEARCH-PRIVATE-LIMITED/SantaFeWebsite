@@ -1,0 +1,25 @@
+.brands {
+    padding: 120px 0;
+    .all-brand {
+        .single-brand {
+            padding: 0 20px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid rgba($black, 0.2);
+            outline: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &.brands-3 {
+        background: $color3;
+        .all-brand {
+            .single-brand {
+                background: $sky;
+            }
+        }
+    }
+}

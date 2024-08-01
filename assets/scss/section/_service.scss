@@ -1,0 +1,227 @@
+.service {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background: $sky;
+    position: relative;
+    z-index: 2;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/section-bg.png) center center no-repeat;
+        background-size: cover;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    .single-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $sky;
+        border: 1px solid rgba($color2, 0.5);
+        border-radius: 5px;
+        padding: 30px;
+        margin-bottom: 30px;
+        transition: 0.4s;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../images/box-bg.jpg) center center no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 0.4s;
+            z-index: -1;
+        }
+        .part-icon {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url(../images/box-bg.jpg) center center no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            color: $gold;
+            margin-bottom: 25px;
+            transition: 0.4s;
+            position: relative;
+            z-index: 2;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0;
+                height: 0;
+                background: $white;
+                border-radius: 50%;
+                transition: 0.4s;
+                z-index: -1;
+            }
+            [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+            [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+                font-size: 40px;
+                margin-left: 0px;
+            }
+        }
+        .part-txt {
+            text-align: center;
+            margin-bottom: -6px;
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $color2;
+                margin-bottom: 15px;
+                transition: 0.4s;
+            }
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 10px;
+                transition: 0.4s;
+            }
+            a {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $color1;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 110%;
+                    transform: translateY(-50%);
+                    width: 0;
+                    height: 2px;
+                    background: $white;
+                    transition: 0.4s;
+                }
+                &:hover {
+                    &:after {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+        &:hover {
+            border-color: transparent;
+            &:after {
+                opacity: 1;
+            }
+            .part-icon {
+                color: $color2;
+                &:after {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .part-txt {
+                h3 {
+                    color: $gold;
+                }
+                p, a {
+                    color: $white;
+                }
+            }
+        }
+    }
+    &.service-2 {
+        background: url(../images/service-bg.jpg) center center no-repeat;
+        background-size: cover;
+        &:after {
+            background: $black;
+            opacity: 0.7;
+        }
+        .heading {
+            p {
+                color: $sky;
+            }
+            h2 {
+                color: $gold;
+            }
+        }
+        .single-box {
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                background: $gradient-1;
+                border-radius: 5px;
+                opacity: 0;
+                transition: 0.4s;
+                z-index: -1;
+            }
+            &:after {
+                width: 0;
+                height: 0;
+                background: $gradient-1;
+            }
+            &:hover {
+                &:before {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.8;
+                }
+                &:after {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    &.service-3 {
+        background: $color5;
+        .single-box {
+            border: 0;
+            background: $color4;
+            .part-icon {
+                background: $color3;
+                color: $color1;
+                box-shadow: 0px 0px 10px 0px rgba($black, 0.5);
+                &:after {
+                    background: $sky;
+                }
+            }
+            .part-txt {
+                h3 {
+                    color: $white;
+                }
+                p {
+                    color: $sky;
+                }
+                a {
+                    color: $sky;
+                }
+            }
+            &:hover {
+                &:after {
+                    opacity: 0.5;
+                }
+                .part-txt {
+                    h3 {
+                        color: $gold;
+                    }
+                }
+            }
+        }
+    }
+}

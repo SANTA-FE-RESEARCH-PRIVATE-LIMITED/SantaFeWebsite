@@ -1,0 +1,71 @@
+.about-2 {
+    padding: 120px 0;
+    .part-txt {
+        .title {
+            margin-bottom: 50px;
+            h2 {
+                font-size: 45px;
+                line-height: 55px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $color2;
+                margin-top: -5px;
+                margin-bottom: -25px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        h6 {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        .progress {
+            height: 10px;
+            background: $sky;
+            overflow: visible;
+            .progress-bar {
+                background-color: $color2;
+                border-radius: 3px;
+                overflow: visible;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -3px;
+                    right: -3px;
+                    width: 16px;
+                    height: 16px;
+                    background: $gradient-1;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .part-img {
+        img {
+            width: 100%;
+            animation: 5s bounce linear infinite;
+        }
+    }
+    &.about-2-3 {
+        background: $color3;
+        .part-txt {
+            .title {
+                h2 {
+                    color: $white;
+                }
+            }
+            p {
+                color: $sky;
+            }
+            h6 {
+                color: $sky;
+            }
+        }
+    }
+}

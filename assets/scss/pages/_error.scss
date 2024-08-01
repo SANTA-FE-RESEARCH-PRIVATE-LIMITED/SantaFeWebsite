@@ -1,0 +1,29 @@
+.error {
+    padding: 120px 0;
+    .part-img {
+        padding: 0 60px;
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    .part-txt {
+        text-align: center;
+        h2 {
+            display: inline-block;
+            font-family: $body;
+            font-size: 60px;
+            font-weight: 800;
+            color: transparent;
+            background: $gradient-2;
+            background-clip: text;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.testimonial {
+    padding: 120px 0;
+    background: $sky;
+    .comments {
+        .comment {
+            background: $color1;
+            padding: 40px 30px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            outline: none;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 30px solid transparent;
+                border-top-color: $color1;
+            }
+            .part-txt {
+                text-align: center;
+                h3 {
+                    font-size: 25px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color: $white;
+                    margin-bottom: 5px;
+                }
+                span {
+                    display: inline-block;
+                    font-style: italic;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: $sky;
+                    margin-bottom: 10px;
+                }
+                .star {
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    color: $gold;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .clients {
+        position: relative;
+        .slick-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 100%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            background: $gradient-1;
+            color: $white;
+            z-index: 2;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $gradient-2;
+                border-radius: 50%;
+                opacity: 0;
+                transition: 0.4s;
+                z-index: -1;
+            }
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+        .single-client {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            outline: none;
+            img {
+                width: 70px;
+                border-radius: 50%;
+            }
+            &.slick-center {
+                img {
+                    width: 85px;
+                    height: 85px;
+                    border: 5px solid $color1;
+                }
+            }
+        }
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            outline: none;
+            border: none;
+            border-radius: 50%;
+            background: $gradient-1;
+            color: $white;
+            z-index: 2;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $gradient-2;
+                border-radius: 50%;
+                opacity: 0;
+                transition: 0.4s;
+                z-index: -1;
+            }
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.testimonial-2 {
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../images/testimonial-2-bg.png) center center no-repeat;
+            background-size: cover;
+            opacity: 0.03;
+            z-index: -1;
+        }
+    }
+    &.testimonial-3 {
+        background: $color5;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../images/testimonial-2-bg.png) center center no-repeat;
+            background-size: cover;
+            opacity: 0.05;
+            z-index: -1;
+        }
+        .comments {
+            .comment {
+                background: $color4;
+                &:after {
+                    border-top-color: $color4;
+                }
+            }
+        }
+        .clients {
+            .single-client {
+                &.slick-center {
+                    img {
+                        border-color: $color4;
+                    }
+                }
+            }
+        }
+    }
+}

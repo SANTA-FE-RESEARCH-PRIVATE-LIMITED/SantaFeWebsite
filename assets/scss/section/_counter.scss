@@ -1,0 +1,30 @@
+.counter {
+    padding: 80px 0;
+    background: url(../images/section-bg.jpg) center center no-repeat;
+    background-size: cover;
+    .counter-txt {
+        text-align: center;
+        h2 {
+            font-size: 50px;
+            font-weight: 500;
+            color: $white;
+            margin-top: -10px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: -6px;
+        }
+    }
+    &.counter-3 {
+        background-image: url(../images/section-bg-2.jpg);
+        .counter-txt {
+            h2, p {
+                color: $sky;
+            }
+        }
+    }
+}

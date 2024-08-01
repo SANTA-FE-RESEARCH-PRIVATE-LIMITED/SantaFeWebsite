@@ -1,0 +1,105 @@
+.offers {
+    padding: 120px 0;
+    background: $sky;
+    .part-img {
+        img {
+            width: 100%;
+            animation: 5s bounce linear infinite;
+        }
+    }
+    .content {
+        .nav {
+            display: inline-flex;
+            border-bottom: 0;
+            border-radius: 5px;
+            background: $white;
+            box-shadow: 0px 4px 10px 2px rgba($black, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            .nav-item {
+                margin-bottom: 0;
+                .nav-link {
+                    padding: 10px 30px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color: $color2;
+                    border: 0;
+                    border-radius: 0;
+                    &.active {
+                        color: $white;
+                        background: $gradient-2;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                background: $white;
+                box-shadow: 0px 4px 10px 2px rgba($black, 0.1);
+                transform: scale(0.8);
+                padding: 30px;
+                border-radius: 5px;
+                transition: 0.4s;
+                &.show {
+                    transform: scale(1);
+                }
+                .part-txt {
+                    h3 {
+                        font-size: 35px;
+                        line-height: 45px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        color: $color2;
+                        margin-top: -5px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                    }
+                    ul {
+                        padding: 0;
+                        margin-bottom: -4px;
+                        li {
+                            list-style: none;
+                            font-size: 16px;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            padding-top: 15px;
+                            i {
+                                color: $color1;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.offers-3 {
+        background: $color5;
+        .content {
+            .tab-content {
+                .tab-pane {
+                    background: $color4;
+                    .part-txt {
+                        h3 {
+                            color: $white;
+                        }
+                        p {
+                            color: $sky;
+                        }
+                        ul {
+                            li {
+                                color: $sky;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
