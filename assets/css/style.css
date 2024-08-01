@@ -812,7 +812,7 @@ a {
     transition: 0.4s;
     position: relative;
     z-index: 2;
-    min-height: 400px; }
+    min-height: 350px; }
     .service .single-box:after {
       content: "";
       position: absolute;
