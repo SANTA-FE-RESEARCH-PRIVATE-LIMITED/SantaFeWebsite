@@ -811,7 +811,8 @@ a {
     -o-transition: 0.4s;
     transition: 0.4s;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    min-height: 400px; }
     .service .single-box:after {
       content: "";
       position: absolute;
@@ -1426,7 +1427,8 @@ a {
     .team .member .part-img {
       padding: 0 10px; }
       .team .member .part-img img {
-        width: 100%;
+        width: 235px;
+        height: 235px;
         border-radius: 5px;
         margin-top: -80px;
         -webkit-transition: 1s;
